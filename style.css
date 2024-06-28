@@ -59,7 +59,7 @@ nav a:hover{
 }
 
 nav a.home-link{
-    font-size: 26px;
+    font-size: 22px;
     margin-right: auto;
     color: greenyellow;
     text-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
@@ -277,7 +277,7 @@ nav svg{
     }
 
     .about-text {
-        padding-left: 0; /* Reset the padding for small screens */
+        padding-left: 0; 
         padding-bottom: 20px;
     }
 
@@ -295,7 +295,7 @@ nav svg{
     align-items: center;
     max-width: 1200px;
     width: 100%;
-    flex-direction: row-reverse; /* Change the order for larger screens */
+    flex-direction: row-reverse; 
 }
 
 @media (max-width: 768px) {
@@ -342,7 +342,6 @@ nav svg{
 
 .skills-item {
     text-align: center;
-    padding: 20px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -413,7 +412,6 @@ nav svg{
 
 .portfolio-item {
     text-align: center;
-    padding: 20px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -448,71 +446,12 @@ nav svg{
     }
 }
 
-
-/* .portfolio {
-    padding: 50px 20px;
-    text-align: center; 
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.portfolio-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-}
-
-.portfolio-item {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px; 
-    flex: 0 1 calc(33.33% - 20px); 
-    max-width: calc(33.33% - 20px);
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    width: 400px;
-    height: 230px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.activity-name {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .portfolio-item {
-        flex: 0 1 calc(50% - 20px); 
-        max-width: calc(50% - 20px); 
-    }
-
-    @media (max-width: 480px) {
-        .portfolio-item {
-            flex: 1 1 calc(100% - 20px); 
-            max-width: calc(100% - 20px);
-        }
-    }
-} */
-
 /* Testimonial */
 
-.testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.testimonials-container {
     padding: 50px 20px;
+    background-color: var(--color-1);
+    color: var(--text-color);
 }
 
 .testimonial-section-title {
@@ -520,13 +459,18 @@ nav svg{
     color: greenyellow;
     text-shadow: 1px 4px 6px black;
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .testimonial {
     flex: 0 1 calc(33.33% - 20px);
     margin: 10px;
-    padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -538,6 +482,8 @@ nav svg{
     margin-bottom: 20px;
     color: #333;
 }
+
+
 
 .testimonial-author {
     display: flex;
@@ -560,13 +506,13 @@ nav svg{
 
 @media (max-width: 768px) {
     .testimonial {
-        flex: 0 1 calc(50% - 20px); 
+        flex: 0 1 calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
     .testimonial {
-        flex: 1 1 calc(100% - 20px); 
+        flex: 1 1 calc(100% - 20px);
     }
 }
 
